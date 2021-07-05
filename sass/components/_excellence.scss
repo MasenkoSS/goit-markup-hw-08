@@ -1,0 +1,43 @@
+/* Преимущества */
+
+.excellence {
+  height: 251px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: var(--display-property-flex);
+  justify-content: center;
+  box-sizing: border-box;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    width: 270px;
+    height: 120px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    display: var(--display-property-flex);
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--first-text-primary);
+  }
+
+  &__text {
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--complementary-color-text);
+  }
+}

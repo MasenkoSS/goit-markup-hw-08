@@ -1,0 +1,26 @@
+/* logo */
+
+.logo_top {
+  margin-right: 93px;
+  font-family: Raleway;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.173;
+  color: var(--first-text-primary);
+  letter-spacing: 0.03em;
+}
+
+.logo_bottom {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.173;
+  color: var(--main-background-color);
+  letter-spacing: 0.03em;
+}
+
+.logo_color {
+  text-decoration: none;
+  color: var(--highlight-color);
+}
