@@ -21,8 +21,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -239,6 +239,7 @@ textarea::placeholder {
     letter-spacing: 0.06em;
     background-color: var(--highlight-color);
     color: var(--main-background-color);
+    cursor: pointer;
     border: 1px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
