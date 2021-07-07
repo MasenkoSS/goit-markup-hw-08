@@ -1,13 +1,14 @@
 .universal_title {
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.178;
   text-align: center;
   letter-spacing: 0.03em;
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.171;
   }
