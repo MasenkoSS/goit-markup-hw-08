@@ -73,7 +73,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <ul class="excellence">
             <li class="excellence__item">
@@ -100,7 +100,6 @@
                 кадров влечет за собой.
               </p>
             </li>
-
             <li class="excellence__item">
               <div class="excellence__icon">
                 <svg width="70" height="70">
@@ -127,8 +126,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section zero_section_service">
+      </section>
+      <section class="section zero_section_service">
         <div class="container">
           <div class="service_box">
             <h2 class="universal_title">Чем мы занимаемся</h2>
@@ -163,13 +162,40 @@
             </ul>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="section team_background">
+      </section>
+      <section class="section team_background">
         <div class="container">
           <h2 class="universal_title">Наша команда</h2>
           <ul class="nav_team">
             <li class="nav_team__item">
-              <img src="./images/pd.jpg" alt="product designer" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/pd.jpg   1x,
+                    ./images/desktop/team/pdx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/team_pd_tab.jpg   1x,
+                    ./images/tablet/team/team_pd_tabx2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/team_pd_mob.jpg   1x,
+                    ./images/mobile/team/team_pd_mobx2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/team/pd.jpg"
+                  alt="product designer"
+                  width="270"
+                />
+              </picture>
               <div class="resume">
                 <h4 class="resume__name">Игорь Демьяненко</h4>
                 <p class="resume__text">Product Designer</p>
@@ -208,7 +234,34 @@
               </div>
             </li>
             <li class="nav_team__item">
-              <img src="./images/fd.jpg" alt="frontend developer" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/fd.jpg   1x,
+                    ./images/desktop/team/fdx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/team_fd_tab.jpg   1x,
+                    ./images/tablet/team/team_fd_tabx2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/team_fd_mob.jpg   1x,
+                    ./images/mobile/team/team_fd_mobx2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/team/fd.jpg"
+                  alt="frontend developer"
+                  width="270"
+                />
+              </picture>
               <div class="resume">
                 <h4 class="resume__name">Ольга Репина</h4>
                 <p class="resume__text">Frontend Developer</p>
@@ -247,7 +300,34 @@
               </div>
             </li>
             <li class="nav_team__item">
-              <img src="./images/m.jpg" alt="marketing" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/m.jpg   1x,
+                    ./images/desktop/team/mx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/team_m_tab.jpg   1x,
+                    ./images/tablet/team/team_m_tabx2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/team_m_mob.jpg   1x,
+                    ./images/mobile/team/team_m_mobx2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/team/m.jpg"
+                  alt="marketing"
+                  width="270"
+                />
+              </picture>
               <div class="resume">
                 <h4 class="resume__name">Николай Тарасов</h4>
                 <p class="resume__text">Marketing</p>
@@ -286,7 +366,34 @@
               </div>
             </li>
             <li class="nav_team__item">
-              <img src="./images/uid.jpg" alt="ui designer" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team/uid.jpg   1x,
+                    ./images/desktop/team/uidx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team/team_uid_tab.jpg   1x,
+                    ./images/tablet/team/team_uid_tabx2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team/team_uid_mob.jpg   1x,
+                    ./images/mobile/team/team_uid_mobx2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/team/uid.jpg"
+                  alt="ui designer"
+                  width="270"
+                />
+              </picture>
               <div class="resume">
                 <h4 class="resume__name">Михаил Ермаков</h4>
                 <p class="resume__text">UI Designer</p>
@@ -326,9 +433,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="universal_title">Постоянные клиенты</h2>
           <ul class="customers">
@@ -376,7 +483,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Footer -->
     <!-- <footer class="footer_background">

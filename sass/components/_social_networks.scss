@@ -3,10 +3,12 @@
 .social_networks {
   border: none;
   display: flex;
-  width: 206px;
-  margin-left: 32px;
-  margin-right: 32px;
-  justify-content: space-evenly;
+  justify-content: center;
+  max-width: 206px;
+  margin-left: 122px;
+  margin-right: 122px;
+
+  // justify-content: space-evenly;
 
   &__item:not(:last-child) {
     margin-right: 10px;
