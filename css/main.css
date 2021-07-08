@@ -668,6 +668,54 @@ textarea::placeholder {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .client {
+    display: inline-block;
+    align-items: center;
+  }
+  .client .item + .item {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .client .item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .client .item:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .client .item:nth-child(2n) {
+    margin-left: 0px;
+  }
+  .client .item:nth-child(n + 3) {
+    margin-top: 0px;
+  }
+  .client .item:nth-child(3n), .client .item:nth-child(3n-1) {
+    margin-left: 30px;
+  }
+  .client .item:nth-child(n + 4) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) and (min-width: 1200px) {
+  .client .item:nth-child(n + 4) {
+    margin-top: 0px;
+  }
+  .client .item + .item {
+    margin-left: 30px;
+  }
+}
+
 /* Услуги */
 .service_box {
   display: none;
@@ -794,14 +842,35 @@ textarea::placeholder {
   height: 92px;
 }
 
-.customers__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 479px) {
+  .customers__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
+  .customers {
+    max-width: 480px;
+  }
   .customers__item:nth-child(2n + 2) {
     margin-left: 30px;
     margin-bottom: 30px;
+  }
+  .customers__item:nth-child(n + 5) {
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers {
+    max-width: 768px;
+  }
+  .customers__item:nth-child(2n + 1) {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .customers__item:nth-child(n + 5) {
+    margin-bottom: -30px;
   }
 }
 
