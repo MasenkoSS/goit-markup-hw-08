@@ -54,54 +54,54 @@
 
 // ???????????????????????????????????????????
 
-.client {
-  @media screen and (max-width: 479px) {
-    display: inline-block;
-    align-items: center;
-    .item {
-      & + .item {
-        margin-top: 30px;
-      }
-    }
-  }
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .item {
-      &:nth-child(2n) {
-        margin-left: 30px;
-      }
-      &:nth-child(n + 3) {
-        margin-top: 30px;
-      }
-    }
-    @media screen and (min-width: 768px) {
-      .item {
-        &:nth-child(2n) {
-          margin-left: 0px;
-        }
-        &:nth-child(n + 3) {
-          margin-top: 0px;
-        }
-        &:nth-child(3n),
-        &:nth-child(3n-1) {
-          margin-left: 30px;
-        }
-        &:nth-child(n + 4) {
-          margin-top: 30px;
-        }
-      }
-      @media screen and (min-width: 1200px) {
-        .item {
-          &:nth-child(n + 4) {
-            margin-top: 0px;
-          }
-          & + .item {
-            margin-left: 30px;
-          }
-        }
-      }
-    }
-  }
-}
+// .client {
+//   @media screen and (max-width: 479px) {
+//     display: inline-block;
+//     align-items: center;
+//     .item {
+//       & + .item {
+//         margin-top: 30px;
+//       }
+//     }
+//   }
+// @media screen and (min-width: 480px) {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   .item {
+//     &:nth-child(2n) {
+//       margin-left: 30px;
+//     }
+//     &:nth-child(n + 3) {
+//       margin-top: 30px;
+//     }
+//   }
+// @media screen and (min-width: 768px) {
+//   .item {
+//     &:nth-child(2n) {
+//       margin-left: 0px;
+//     }
+//     &:nth-child(n + 3) {
+//       margin-top: 0px;
+//     }
+//     &:nth-child(3n),
+//     &:nth-child(3n-1) {
+//       margin-left: 30px;
+//     }
+//     &:nth-child(n + 4) {
+//       margin-top: 30px;
+//     }
+//     //   }
+//       @media screen and (min-width: 1200px) {
+//         .item {
+//           &:nth-child(n + 4) {
+//             margin-top: 0px;
+//           }
+//           & + .item {
+//             margin-left: 30px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

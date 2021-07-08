@@ -15,14 +15,14 @@
   </head>
   <body class="body-styles">
     <!-- Header -->
-    <!-- <header class="header_border">
+    <header class="header_border">
       <div class="container">
         <div class="site_nav">
           <a class="logo_top" href="./index.html"
             ><span class="logo_color">Web</span>Studio</a
           >
-          <nav>
-            <ul class="menu_nav">
+          <!-- <nav> -->
+          <!-- <ul class="menu_nav">
               <li class="menu_nav__item">
                 <a class="menu_nav__link actual" href="./index.html">Студия</a>
               </li>
@@ -32,9 +32,9 @@
               <li class="menu_nav__item">
                 <a class="menu_nav__link" href="">Контакты</a>
               </li>
-            </ul>
-          </nav>
-          <ul class="contact_nav">
+            </ul> -->
+          <!-- </nav> -->
+          <!-- <ul class="contact_nav">
             <li>
               <a href="mailto:" class="contact_nav__mail"
                 ><svg class="contact_nav__icon" width="16px" height="12px">
@@ -51,10 +51,68 @@
                 >+38 096 111 11 11</a
               >
             </li>
-          </ul>
+          </ul> -->
+
+          <button
+            type="button"
+            class="mobile_open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          ><svg width="24" height="16">
+                  <use href="./images/icon/icons.svg#icon-menu_24px"></use>
+                </svg></button>
         </div>
       </div>
-    </header> -->
+      <div class="mobile_site_nav js-menu-container" id="mobile-menu"">
+        <div class="mobile_box">
+          <button type="button" class="mobile_close js-close-menu"><svg width="25" height="16">
+                  <use href="./images/icon/icons.svg#icon-close_24px"></use>
+                </svg></button>
+          <nav>
+            <ul class="mobile_menu list">
+              <li class="mobile_menu__item">
+                <a href="#" class="mobile_menu__list link">Студия</a>
+              </li>
+              <li class="mobile_menu__item">
+                <a href="#" class="mobile_menu__list link">Портфолио</a>
+              </li>
+              <li class="mobile_menu__item">
+                <a href="#" class="mobile_menu__list link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile_menu__sek">
+            <ul class="mobile_contact__nav list">
+              <li class="mobile_contact__item">
+                <a href="tel:+380961111111" class="mobile_contact__tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile_contact__item">
+                <a href="mailto:" class="mobile_contact__mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile_socials list">
+              <li class="mobile_socials__item">
+                <a href="#" class="mobile_socials__link link">Instagram</a>
+              </li>
+              <li class="mobile_socials__item">
+                <a href="#" class="mobile_socials__link link">Twitter</a>
+              </li>
+              <li class="mobile_socials__item">
+                <a href="#" class="mobile_socials__link link">Facebook</a>
+              </li>
+              <li class="mobile_socials__item">
+                <a href="#" class="mobile_socials__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Start main-content -->
     <main>
       <section class="overlay_image">
@@ -434,7 +492,6 @@
           </ul>
         </div>
       </section>
-
       <section class="section">
         <div class="container">
           <h2 class="universal_title">Постоянные клиенты</h2>
@@ -615,7 +672,7 @@
                 <svg class="checkbox__icon">
                   <use href="./images/icon/icons.svg#icon-check"></use></svg
                 >Соглашаюсь с рассылкой и принимаю<span>
-                  <a class="checkbox__link" href="#">Условия договора</a>
+                  <a class="checkbox__link" href="#">Условиядоговора</a>
                 </span>
               </label>
             </div>
@@ -634,5 +691,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

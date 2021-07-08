@@ -30,6 +30,13 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: 1200px) {
+    & {
+      min-width: 528px;
+      height: 609px;
+    }
+  }
+
   .backdrop & {
     transform: translate(-50%, -50%) scale(0.9);
   }
@@ -170,20 +177,39 @@ textarea::placeholder {
 .checkbox {
   position: relative;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: 10px;
-  margin-left: 12px;
-  min-width: 425px;
+  min-width: 370px;
   height: 24px;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-top: 10px;
+      margin-left: 12px;
+      min-width: 450px;
+      height: 24px;
+    }
+  }
 
   &__nav {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
+    justify-content: flex-start;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
     color: var(--complementary-color-text);
+
+    @media screen and (min-width: 1200px) {
+      & {
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        min-width: 425px;
+        height: 24px;
+      }
+    }
   }
 
   &__checkmark {
