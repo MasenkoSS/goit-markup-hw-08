@@ -15,34 +15,38 @@
   </head>
   <body class="body-styles">
     <!-- Header -->
-<header class="header_border">
+    <header class="header_border">
       <div class="container header_box">
         <div class="menu_open_logo">
-                  <a class="logo_top" href="./index.html"
+          <a class="logo_top" href="./index.html"
             ><span class="logo_color">Web</span>Studio</a
           >
-                <button
+          <button
             type="button"
             class="mobile_open js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
-          ><svg width="24" height="16">
-                  <use href="./images/icon/icons.svg#icon-menu_24px"></use>
-                </svg></button>
-                </div>
+          >
+            <svg width="24" height="16">
+              <use href="./images/icon/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+        </div>
         <div class="site_nav">
-<ul class="menu_nav">
-              <li class="menu_nav__item">
-                <a class="menu_nav__link" href="./index.html">Студия</a>
-              </li>
-              <li class="menu_nav__item">
-                <a class="menu_nav__link actual" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="menu_nav__item">
-                <a class="menu_nav__link" href="">Контакты</a>
-              </li>
-            </ul>
-<ul class="contact_nav">
+          <ul class="menu_nav">
+            <li class="menu_nav__item">
+              <a class="menu_nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu_nav__item">
+              <a class="menu_nav__link actual" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu_nav__item">
+              <a class="menu_nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="contact_nav">
             <li>
               <a href="mailto:" class="contact_nav__mail"
                 ><svg class="contact_nav__m_icon">
@@ -62,21 +66,27 @@
           </ul>
         </div>
       </div>
-      <div class="mobile_site_nav js-menu-container" id="mobile-menu"">
+      <div class="mobile_site_nav js-menu-container" id="mobile-menu">
         <div class="mobile_box">
-          <button type="button" class="mobile_close js-close-menu"><svg width="25" height="16">
-                  <use href="./images/icon/icons.svg#icon-close_24px"></use>
-                </svg></button>
+          <button type="button" class="mobile_close js-close-menu">
+            <svg width="25" height="16">
+              <use href="./images/icon/icons.svg#icon-close_24px"></use>
+            </svg>
+          </button>
           <nav>
             <ul class="mobile_menu list">
               <li class="mobile_menu__item">
                 <a href="./index.html" class="mobile_menu__list link">Студия</a>
               </li>
               <li class="mobile_menu__item">
-                <a href="./portfolio.html" class="mobile_menu__list link">Портфолио</a>
+                <a href="./portfolio.html" class="mobile_menu__list link"
+                  >Портфолио</a
+                >
               </li>
               <li class="mobile_menu__item">
-                <a href="./index.html" class="mobile_menu__list link">Контакты</a>
+                <a href="./index.html" class="mobile_menu__list link"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </nav>
@@ -111,7 +121,6 @@
         </div>
       </div>
     </header>
-
     <!-- Main-content -->
     <main>
       <section class="section_portfolio">
@@ -146,7 +155,34 @@
           <ul class="projects">
             <li class="projects__item">
               <div class="projects_content">
-                <img src="./images/web-site-m.jpg" alt="web-site" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfol/web-site-m.jpg   1x,
+                      ./images/desktop/portfol/web-site-mx2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfol/web-site-tab-min.jpg   1x,
+                      ./images/tablet/portfol/web-site-tabx2-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfol/web-site-mob-min.jpg   1x,
+                      ./images/mobile/portfol/web-site-mobx2-min.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/desktop/portfol/web-site-m.jpg"
+                    alt="web-site"
+                    width="370"
+                  />
+                </picture>
                 <p class="projects_content__description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -160,11 +196,34 @@
             </li>
             <li class="projects__item">
               <div class="projects_content">
-                <img
-                  src="./images/golden-star-m.jpg"
-                  alt="golden star"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/portfol/golden-star-m.jpg   1x,
+                      ./images/desktop/portfol/golden-star-mx2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/portfol/golden-star-tab-min.jpg   1x,
+                      ./images/tablet/portfol/golden-star-tabx2-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/portfol/golden-star-mob-min.jpg   1x,
+                      ./images/mobile/portfol/golden-star-mobx2-min.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/desktop/portfol/golden-star-m.jpg"
+                    alt="golden star"
+                    width="370"
+                  />
+                </picture>
                 <p class="projects_content__description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -179,61 +238,238 @@
               </div>
             </li>
             <li class="projects__item">
-              <img src="./images/seafood-m.jpg" alt="seafood" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/portfol/seafood-m.jpg   1x,
+                    ./images/desktop/portfol/seafood-mx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/portfol/seafood-tab-min.jpg   1x,
+                    ./images/tablet/portfol/seafood-tabx2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/portfol/seafood-mob-min.jpg   1x,
+                    ./images/mobile/portfol/seafood-mobx2-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/portfol/seafood-m.jpg"
+                  alt="seafood"
+                  width="370"
+                />
+              </picture>
               <div class="projects_name">
                 <h2 class="projects_name__title">Ресторан Seafood</h2>
                 <p class="projects_name__text">Приложение</p>
               </div>
             </li>
             <li class="projects__item">
-              <img src="./images/prime-m.jpg" alt="prime" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/portfol/prime-m.jpg   1x,
+                    ./images/desktop/portfol/prime-mx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/portfol/prime-tab-min.jpg   1x,
+                    ./images/tablet/portfol/prime-tabx2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/portfol/prime-mob-min.jpg   1x,
+                    ./images/mobile/portfol/prime-mobx2-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/portfol/prime-m.jpg"
+                  alt="prime"
+                  width="370"
+                />
+              </picture>
               <div class="projects_name">
                 <h2 class="projects_name__title">Проект Prime</h2>
                 <p class="projects_name__text">Маркетинг</p>
               </div>
             </li>
             <li class="projects__item">
-              <img src="./images/boxes-m.jpg" alt="boxes" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/portfol/boxes-m.jpg   1x,
+                    ./images/desktop/portfol/boxes-mx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/portfol/boxes-tab-min.jpg   1x,
+                    ./images/tablet/portfol/boxes-tabx2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/portfol/boxes-mob-min.jpg   1x,
+                    ./images/mobile/portfol/boxes-mobx2-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/portfol/boxes-m.jpg"
+                  alt="boxes"
+                  width="370"
+                />
+              </picture>
               <div class="projects_name">
                 <h2 class="projects_name__title">Проект Boxes</h2>
                 <p class="projects_name__text">Приложение</p>
               </div>
             </li>
             <li class="projects__item">
-              <img
-                src="./images/inspiration-m.jpg"
-                alt="inspiration"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/portfol/inspiration-m.jpg   1x,
+                    ./images/desktop/portfol/inspiration-mx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/portfol/inspiration-tab-min.jpg   1x,
+                    ./images/tablet/portfol/inspiration-tabx2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/portfol/inspiration-mob-min.jpg   1x,
+                    ./images/mobile/portfol/inspiration-mobx2-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/portfol/inspiration-m.jpg"
+                  alt="inspiration"
+                  width="370"
+                />
+              </picture>
               <div class="projects_name">
                 <h2 class="projects_name__title">Inspiration has no Borders</h2>
                 <p class="projects_name__text">Веб-сайт</p>
               </div>
             </li>
             <li class="projects__item">
-              <img
-                src="./images/limited-edition-m.jpg"
-                alt="limited edition"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/portfol/limited-edition-m.jpg   1x,
+                    ./images/desktop/portfol/limited-edition-mx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/portfol/limited-edition-tab-min.jpg   1x,
+                    ./images/tablet/portfol/limited-edition-tabx2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/portfol/limited-edition-mob-min.jpg   1x,
+                    ./images/mobile/portfol/limited-edition-mobx2-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/portfol/limited-edition-m.jpg"
+                  alt="limited edition"
+                  width="370"
+                />
+              </picture>
               <div class="projects_name">
                 <h2 class="projects_name__title">Издание Limited Edition</h2>
                 <p class="projects_name__text">Дизайн</p>
               </div>
             </li>
             <li class="projects__item">
-              <img src="./images/lab-m.jpg" alt="lab" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/portfol/lab-m.jpg   1x,
+                    ./images/desktop/portfol/lab-mx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/portfol/lab-tab-min.jpg   1x,
+                    ./images/tablet/portfol/lab-tabx2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/portfol/lab-mob-min.jpg   1x,
+                    ./images/mobile/portfol/lab-mobx2-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/portfol/lab-m.jpg"
+                  alt="lab"
+                  width="370"
+                />
+              </picture>
               <div class="projects_name">
                 <h2 class="projects_name__title">Проект LAB</h2>
                 <p class="projects_name__text">Маркетинг</p>
               </div>
             </li>
             <li class="projects__item">
-              <img
-                src="./images/growing-business-m.jpg"
-                alt="growing business"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/portfol/growing-business-m.jpg   1x,
+                    ./images/desktop/portfol/growing-business-mx2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/portfol/growing-business-tab-min.jpg   1x,
+                    ./images/tablet/portfol/growing-business-tabx2-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/portfol/growing-business-mob-min.jpg   1x,
+                    ./images/mobile/portfol/growing-business-mobx2-min.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/desktop/portfol/growing-business-m.jpg"
+                  alt="growing business"
+                  width="370"
+                />
+              </picture>
               <div class="projects_name">
                 <h2 class="projects_name__title">Growing Business</h2>
                 <p class="projects_name__text">Приложение</p>
@@ -244,7 +480,7 @@
       </section>
     </main>
     <!-- Footer -->
-     <footer class="footer_background">
+    <footer class="footer_background">
       <div class="container footer_nav">
         <div class="footer_contact">
           <a

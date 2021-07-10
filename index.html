@@ -14,35 +14,37 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body-styles">
-        <!-- Header -->
-<header class="header_border">
+    <!-- Header -->
+    <header class="header_border">
       <div class="container header_box">
         <div class="menu_open_logo">
-                  <a class="logo_top" href="./index.html"
+          <a class="logo_top" href="./index.html"
             ><span class="logo_color">Web</span>Studio</a
           >
-                <button
+          <button
             type="button"
             class="mobile_open js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
-          ><svg width="24" height="16">
-                  <use href="./images/icon/icons.svg#icon-menu_24px"></use>
-                </svg></button>
-                </div>
+          >
+            <svg width="24" height="16">
+              <use href="./images/icon/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+        </div>
         <div class="site_nav">
-<ul class="menu_nav">
-              <li class="menu_nav__item">
-                <a class="menu_nav__link actual" href="./index.html">Студия</a>
-              </li>
-              <li class="menu_nav__item">
-                <a class="menu_nav__link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="menu_nav__item">
-                <a class="menu_nav__link" href="./index.html">Контакты</a>
-              </li>
-            </ul>
-<ul class="contact_nav">
+          <ul class="menu_nav">
+            <li class="menu_nav__item">
+              <a class="menu_nav__link actual" href="./index.html">Студия</a>
+            </li>
+            <li class="menu_nav__item">
+              <a class="menu_nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu_nav__item">
+              <a class="menu_nav__link" href="./index.html">Контакты</a>
+            </li>
+          </ul>
+          <ul class="contact_nav">
             <li>
               <a href="mailto:" class="contact_nav__mail"
                 ><svg class="contact_nav__m_icon">
@@ -62,21 +64,27 @@
           </ul>
         </div>
       </div>
-      <div class="mobile_site_nav js-menu-container" id="mobile-menu"">
+      <div class="mobile_site_nav js-menu-container" id="mobile-menu">
         <div class="mobile_box">
-          <button type="button" class="mobile_close js-close-menu"><svg width="25" height="16">
-                  <use href="./images/icon/icons.svg#icon-close_24px"></use>
-                </svg></button>
+          <button type="button" class="mobile_close js-close-menu">
+            <svg width="25" height="16">
+              <use href="./images/icon/icons.svg#icon-close_24px"></use>
+            </svg>
+          </button>
           <nav>
             <ul class="mobile_menu list">
               <li class="mobile_menu__item">
                 <a href="./index.html" class="mobile_menu__list link">Студия</a>
               </li>
               <li class="mobile_menu__item">
-                <a href="./portfolio.html" class="mobile_menu__list link">Портфолио</a>
+                <a href="./portfolio.html" class="mobile_menu__list link"
+                  >Портфолио</a
+                >
               </li>
               <li class="mobile_menu__item">
-                <a href="./index.html" class="mobile_menu__list link">Контакты</a>
+                <a href="./index.html" class="mobile_menu__list link"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </nav>
@@ -111,8 +119,8 @@
         </div>
       </div>
     </header>
- <!-- Main-content -->
-<main>
+    <!-- Main-content -->
+    <main>
       <section class="overlay_image">
         <div class="container">
           <div class="menu_slogans">
@@ -189,30 +197,58 @@
             <h2 class="universal_title">Чем мы занимаемся</h2>
             <ul class="service">
               <li class="service__item">
-                <img
-                  src="./images/engage_a.jpg"
-                  alt="engage1"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/service/engage_a-min.jpg   1x,
+                      ./images/desktop/service/engage_ax2-min.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop/service/engage_a-min.jpg"
+                    alt="engage1"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="service__text">Десктопные приложения</p>
               </li>
               <li class="service__item">
-                <img
-                  src="./images/engage_b.jpg"
-                  alt="engage2"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/service/engage_b-min.jpg   1x,
+                      ./images/desktop/service/engage_bx2-min.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop/service/engage_b-min.jpg"
+                    alt="engage1"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="service__text">Мобильные приложения</p>
               </li>
               <li class="service__item">
-                <img
-                  src="./images/engage_c.jpg"
-                  alt="engage3"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/service/engage_c-min.jpg   1x,
+                      ./images/desktop/service/engage_cx2-min.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop/service/engage_c-min.jpg"
+                    alt="engage1"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+                <p class="service__text">Дес</p>
                 <p class="service__text">Дизайнерские решения</p>
               </li>
             </ul>
@@ -539,7 +575,7 @@
           </ul>
         </div>
       </section>
-</main>
+    </main>
     <!-- Footer -->
     <footer class="footer_background">
       <div class="container footer_nav">
