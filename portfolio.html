@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>"Homework-#-7-portfolio"</title>
+    <title>"Homework-#-8-portfolio"</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -15,38 +15,44 @@
   </head>
   <body class="body-styles">
     <!-- Header -->
-    <header class="header_border">
-      <div class="container">
-        <div class="site_nav">
-          <a class="logo_top" href="./index.html"
+<header class="header_border">
+      <div class="container header_box">
+        <div class="menu_open_logo">
+                  <a class="logo_top" href="./index.html"
             ><span class="logo_color">Web</span>Studio</a
           >
-          <nav>
-            <ul class="menu_nav">
+                <button
+            type="button"
+            class="mobile_open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          ><svg width="24" height="16">
+                  <use href="./images/icon/icons.svg#icon-menu_24px"></use>
+                </svg></button>
+                </div>
+        <div class="site_nav">
+<ul class="menu_nav">
               <li class="menu_nav__item">
-                <a class="menu_nav__link" href="./index.html">Студия</a>
+                <a class="menu_nav__link actual" href="./index.html">Студия</a>
               </li>
               <li class="menu_nav__item">
-                <a class="menu_nav__link actual" href="./portfolio.html"
-                  >Портфолио</a
-                >
+                <a class="menu_nav__link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="menu_nav__item">
                 <a class="menu_nav__link" href="">Контакты</a>
               </li>
             </ul>
-          </nav>
-          <ul class="contact_nav">
+<ul class="contact_nav">
             <li>
               <a href="mailto:" class="contact_nav__mail"
-                ><svg class="contact_nav__icon" width="16px" height="12px">
+                ><svg class="contact_nav__m_icon">
                   <use href="./images/icon/icons.svg#icon-envelope"></use></svg
                 >info@devstudio.com</a
               >
             </li>
             <li>
               <a href="tel:+380961111111" class="contact_nav__tel"
-                ><svg class="contact_nav__icon" width="10px" height="16px">
+                ><svg class="contact_nav__t_icon">
                   <use
                     href="./images/icon/icons.svg#icon-smartphone"
                   ></use></svg
@@ -56,10 +62,59 @@
           </ul>
         </div>
       </div>
+      <div class="mobile_site_nav js-menu-container" id="mobile-menu"">
+        <div class="mobile_box">
+          <button type="button" class="mobile_close js-close-menu"><svg width="25" height="16">
+                  <use href="./images/icon/icons.svg#icon-close_24px"></use>
+                </svg></button>
+          <nav>
+            <ul class="mobile_menu list">
+              <li class="mobile_menu__item">
+                <a href="#" class="mobile_menu__list link">Студия</a>
+              </li>
+              <li class="mobile_menu__item">
+                <a href="#" class="mobile_menu__list link">Портфолио</a>
+              </li>
+              <li class="mobile_menu__item">
+                <a href="#" class="mobile_menu__list link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile_menu__sek">
+            <ul class="mobile_contact__nav list">
+              <li class="mobile_contact__item">
+                <a href="tel:+380961111111" class="mobile_contact__tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile_contact__item">
+                <a href="mailto:" class="mobile_contact__mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile_socials list">
+              <li class="mobile_socials__item">
+                <a href="#" class="mobile_socials__link link">Instagram</a>
+              </li>
+              <li class="mobile_socials__item">
+                <a href="#" class="mobile_socials__link link">Twitter</a>
+              </li>
+              <li class="mobile_socials__item">
+                <a href="#" class="mobile_socials__link link">Facebook</a>
+              </li>
+              <li class="mobile_socials__item">
+                <a href="#" class="mobile_socials__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
+
     <!-- Main-content -->
     <main>
-      <section class="section">
+      <section class="section_portfolio">
         <div class="container portfolio_container">
           <ul class="nav_button">
             <li class="nav_button__item">
@@ -189,7 +244,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer_background">
+     <footer class="footer_background">
       <div class="container footer_nav">
         <div class="footer_contact">
           <a
@@ -262,5 +317,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

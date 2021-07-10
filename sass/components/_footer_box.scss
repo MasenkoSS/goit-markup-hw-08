@@ -5,13 +5,13 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   text-align: center;
   @media screen and (min-width: 768px) {
     & {
       padding-top: 65px;
       padding-right: 89px;
-      margin-left: auto;
+      margin-left: 100px;
     }
   }
 
@@ -19,9 +19,11 @@
     & {
       display: inline-block;
       margin-top: 12px;
-      margin-right: 93px;
       margin-bottom: 40px;
+      margin-left: 70px;
+      margin-right: 93px;
       padding: 0;
+      text-align: left;
     }
   }
 
