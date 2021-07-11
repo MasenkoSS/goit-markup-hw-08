@@ -2,26 +2,26 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     &:nth-child(3) {
       padding-top: 0px;
       padding-bottom: 0px;
     }
-
-    @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .zero_section_service {
   padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .section_portfolio {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     & {
